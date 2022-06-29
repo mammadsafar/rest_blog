@@ -1,4 +1,8 @@
+/docker
+
+.env
 .idea
 
+/venv
 db.sqlite3
-
+/media

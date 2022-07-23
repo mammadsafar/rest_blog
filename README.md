@@ -1,5 +1,14 @@
 # Blog application
 
+### Demo https://blog.mammadsafar.ir/blog/
+
+## Post_List
+![alt text](./Post_List.png )
+## Post_Details
+![alt text](./Post_Details.png)
+## Post_Update
+![alt text](./Post_Update.png)
+
 ## Setup
 
 The first thing to do is to clone the repository:

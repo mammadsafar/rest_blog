@@ -1,6 +1,5 @@
-from django.shortcuts import render, reverse, redirect
+from django.shortcuts import render, reverse, redirect, HttpResponse, get_object_or_404
 from django.core.exceptions import ObjectDoesNotExist
-from django.shortcuts import get_object_or_404
 from django.views import generic
 from django.urls import reverse_lazy
 
@@ -48,6 +47,7 @@ class PostDeleteView(generic.DeleteView):
     template_name = 'blog/post_delete.html'
     success_url = reverse_lazy('post_list')
 
+
 # def post_list_view(request):
 #     posts = Post.objects.filter(status='pub').order_by('-datetime_modified')
 #     return render(request, 'blog/post_list.html', {'post_list': posts})
@@ -81,3 +81,7 @@ class PostDeleteView(generic.DeleteView):
 #         return redirect('post_list')
 #
 #     return render(request, 'blog/post_create.html', context={'form': form})
+
+# class APIPostListView(generic.ListView):
+#     pass
+
